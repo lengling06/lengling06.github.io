@@ -1,0 +1,294 @@
+    layout: false
+<!doctype html>
+    #layout: false   
+<html lang="zh-CN">
+<head>
+    layout: false
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢</title>
+	<style type="text/css">
+	@font-face {
+	font-family:HarmonyOS_Sans_SC_Medium;font-style: normal;font-display: swap;
+    src: url('../fonts/HarmonyOS_Sans_SC_Medium.subset.woff2') format('woff2');
+}
+    
+* {
+	font-family: HarmonyOS_Sans_SC_Medium;
+}
+::selection{background:#212121;color:#fff}
+::-webkit-scrollbar{width:5px;height:100%;background-color:#fff}
+::-webkit-scrollbar-track{background:linear-gradient(135deg,#fff 0,#fff 100%)}
+::-webkit-scrollbar-thumb{border-radius:20px;-webkit-box-shadow:inset 0 0 6px rgba(255,255,255,.3);background-color:#212121}
+::-webkit-scrollbar-thumb:hover{border-radius:20px;-webkit-box-shadow:inset 0 0 5px rgba(255,255,255,.2);background:#212121}
+
+body {
+	font-family: 'HarmonyOS_Sans_SC_Medium';
+    font-size: 15px;
+	background-color: #f7f7f7;
+    -webkit-font-smoothing: antialiased;
+    background-position: left top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+	color: rgba(34,47,62,1);
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	line-height: 1.8;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+p {
+	margin: 0;
+	font-variant-ligatures: common-ligatures discretionary-ligatures;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link,a:visited {
+	color: rgba(34,47,62,0.7);
+	opacity: 1;
+	-webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+a:hover,a:active {
+	color: #000;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-rendering: optimizeLegibility;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 50rem;
+    border-radius: 10px;
+    margin-top: 60px;
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 0px 30px 5px rgba(119,118,118,0.33);
+
+}
+
+.content {
+	margin: 0 auto;
+	width: 720px;
+	height: auto;
+    margin-bottom: 1rem;
+}
+
+.list_with_title .container {
+	margin: 0 auto;
+	width: 720px;
+}
+
+.header {
+	margin: 0 auto;
+	padding: 50px 0px 20px 0px;
+	max-width: 720px;
+	background-size: cover;
+	flex-wrap: wrap;
+	-webkit-background-size: cover;
+}
+
+.header .me-tx {
+    text-align: end;
+}
+
+.header .me-tx img {
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px -2px rgb(0 0 0 / 50%);
+}
+
+.header .description{
+    margin-top: -4rem;
+}
+.header .description h1{
+	color: rgba(0, 0, 0, 0.918);
+    font-size: 3rem;
+}
+.header .description p{
+	color: rgba(34,47,62,0.4);
+	font-size: 14px;
+}
+
+.header .description .sub_title {
+	float: none !important;
+	list-style: none;
+	font-weight: normal !important;
+	flex: 3;
+	justify-content: end;
+}
+.link_a{padding-right:5px!important;padding-left:5px!important}
+.links-list-item{margin: 1rem;-webkit-transition:.3s;-webkit-transition:.3s;transition:.3s;-moz-transition:.3s;border-radius:10px;transition-timing-function:ease-in-out;position:relative;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.links-list-item a{display:flex;border:none;align-items:center}
+.links-list-item:hover .links-avatar{transform:scale(2)}
+.links-list-item:hover .links-item-info span{transform:translateX(20%) translateY(0)}
+.links-avatar{margin:10px 20px 10px 10px;border-radius: 10px;-webkit-transition:.3s;-webkit-transition:.3s;transition:.3s;-moz-transition:.3s;background:#f5f5f5;max-width:60px;max-height:60px}
+.links-item-name{text-align:left;font-size:18px;color:#000;display:block;font-weight:700;align-items:center;-webkit-transition:.3s;-webkit-transition:.3s;transition:.3s;-moz-transition:.3s}
+.links-item-desc{white-space:normal;color:#000;text-align:left;text-overflow:ellipsis;opacity:.7;font-weight:700;display:block;font-size:14px;-webkit-transition:.3s;-webkit-transition:.3s;transition:.3s;-moz-transition:.3s}
+
+
+.flexbox{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+.flex-50{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.footer {
+    clear: both;
+    margin: 0 auto;
+    padding: 25px 0px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 12px;
+}
+.footer .powered_by {
+    margin: 0;
+    color: rgba(34,47,62,0.2);
+    font-size: 11px;
+}
+.footer .powered_by a {
+    margin: 0px 2px;
+    color: rgba(34,47,62,0.2);
+}
+.footer .powered_by a:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 800px){
+    .main {
+    margin-top: 0px;
+    width: 100%;
+    border: 0;
+    }
+    .content {
+        width: auto;
+    }
+    .header,.index_element{
+        margin: 1rem;
+    }
+    .flex-50{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+	</style>
+</head>
+
+<body>
+    <div class=" main">
+        <div class="header">
+            <div class="me-tx">
+                <a href="/">
+                    <img src="https://s4.ax1x.com/2022/02/13/HDqiq0.jpg" class="long">
+
+                </a>
+            </div>
+            <div class="description">
+                <h1>Hello!</h1>
+                <p>总之岁月漫长，然而值得等待 这是来自青霜的个人主页！</p>
+                   <p class="links-item-name ell">QQ：2849378116</p>
+            </div>
+        </div>
+        <div class="index_element">
+            <section id="" class="content"><h3>People who care about each other will meet again</h3></section>
+            <section id="links" class="content">
+                <h3><a>我的站点</a></h3>
+                <div class="links-content flexbox"> 
+
+                    <div class="links-card flex-50">
+                        <div class="links-list-item" style="">
+                            <a href=" https://www.baidu.com " rel="external nofollow noreferrer" title=" 槐根梦觉，苦尽甘来，花也喜欢，山也相爱。" target="_blank">
+                            <img class="links-avatar" alt=" 不止于此 " src="https://s4.ax1x.com/2022/02/12/HBQJJS.jpg">
+                            <div class="links-item-info">
+                                <span class="links-item-name ell"> 不止于此 </span>
+                                <span class="links-item-desc ell" title=" 比起尽我所能，我更喜欢全力以赴。">少年的征途是诗和远方</span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="links-card flex-50">
+                        <div class="links-list-item" style="">
+                            <a href=" https://www.baidu.com" rel="external nofollow noreferrer" title=" 鱼鱼能有什么坏心思呢？" target="_blank">
+                            <img class="links-avatar" alt=" 不可知鱼 " src="https://s4.ax1x.com/2022/02/12/HBlnYT.jpg">
+                            <div class="links-item-info">
+                                <span class="links-item-name ell"> 不知鱼 </span>
+                                <span class="links-item-desc ell" title="与君初相识，犹如故人归。"> 非鱼，安知鱼之乐</span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="links-card flex-50">
+                        <div class="links-list-item" style="">
+                            <a href=" https://www.baidu.com " rel="external nofollow noreferrer" title=" 风尘仆仆，终有归途" target="_blank">
+                            <img class="links-avatar" alt=" 人间惊鸿 " src="https://s4.ax1x.com/2022/02/12/HB3KsJ.jpg">
+                            <div class="links-item-info">
+                                <span class="links-item-name ell"> 人间 </span>
+                                <span class="links-item-desc ell" title=" 一睹人间盛世颜"> 远赴人间惊鸿宴</span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+					
+					<div class="links-card flex-50">
+                        <div class="links-list-item" style="">
+                            <a href=" https://www.baidu.com " rel="external nofollow noreferrer" title=" 这山川如酒，敬旷世温柔，至死方休" target="_blank">
+                            <img class="links-avatar" alt=" 云中之谷 " src="https://s4.ax1x.com/2022/02/13/HD7XOP.jpg">
+                            <div class="links-item-info">
+                                <span class="links-item-name ell"> 云谷 </span>
+                                <span class="links-item-desc ell" title=" 我爱你人众皆知"> 云雾消散之际</span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>	
+
+                </div>           
+            </section>
+ 
+        </div>
+    </div>
+    <div class="footer">
+        <div class="powered_by">
+			<p>
+			<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>欢迎来自：
+			<script type="text/javascript"> document.write(returnCitySN["cname"]+'的访客,你的ip地址是：'+returnCitySN["cip"]) </script>
+            </p>
+            <p>来自于青霜的诚意</p>
+            <span><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">粤ICP备xxxxxxxxxxx号</a></span>
+        </div>
+    </div>
+</body>
+
+</html>
